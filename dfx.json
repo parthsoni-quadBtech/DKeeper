@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "dKeeper-react-backend": {
+      "main": "src/dKeeper-react-backend/main.mo",
+      "type": "motoko"
+    },
+    "dKeeper-react-frontend": {
+      "dependencies": [
+        "dKeeper-react-backend"
+      ],
+      "source": [
+        "src/dKeeper-react-frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "dKeeper-react-frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
